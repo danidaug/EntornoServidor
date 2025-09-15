@@ -18,9 +18,11 @@
     <div class="presentacion">
         <img src="img/daniware.png" alt="dani">
     </div>
-    
+     <footer>
+        <?php
+            require_once($_SERVER['DOCUMENT_ROOT'].'/includes/footer.inc.php')
+        ?>
+    </footer>
 </body>
-<footer>
-    <h3>Dani's Cosmic Wares</h3>
-</footer>
+
 </html>

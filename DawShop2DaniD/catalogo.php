@@ -41,9 +41,12 @@
             <span class="price">€39.99</span>
         </div>
     </section>
+    <footer>
+        <?php
+            require_once($_SERVER['DOCUMENT_ROOT'].'/includes/footer.inc.php')
+        ?>
+    </footer>
     
 </body>
-<footer>
-    <h3>Dani's Cosmic Wares</h3>
-</footer>
+
 </html>

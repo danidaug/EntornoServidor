@@ -20,10 +20,12 @@
            <br> Aprovecha esta oferta limitada y descubre por qué <strong>CARIBBEAN</strong> se ha convertido en uno de nuestros productos más populares. 
             ¡Haz tu pedido hoy mismo y disfruta de un viaje de sabor sin salir de casa!
         </p>
-    </section>
-    <footer>
-        <h3>Dani's Cosmic Wares</h3>
+     <footer>
+        <?php
+            require_once($_SERVER['DOCUMENT_ROOT'].'/includes/footer.inc.php')
+        ?>
     </footer>
+    </section>
 </body>
 
 </html>

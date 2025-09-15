@@ -29,8 +29,11 @@
         <textarea name="comentario" id="comentario"></textarea>
         <input type="submit" value="Comentar" ><input type="reset" value="Borrar" >
     </form>
+    <footer>
+        <?php
+            require_once($_SERVER['DOCUMENT_ROOT'].'/includes/footer.inc.php')
+        ?>
+    </footer>
 </body>
-<footer>
-    <h3>Dani's Cosmic Wares</h3>
-</footer>
+
 </html>
