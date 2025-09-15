@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #ab9ee0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  background: #513bcf;
+  padding: 10px;
+}
+.logo {
+    
+  height: 75px; 
+  width: auto;
+ 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: #333;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav a:hover {
+  background: #b070b3;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.promotion{
+    background-color: #a650ec;
+    text-align:center;
+    font-size: 24px;
+    padding: 10px;
+}
+.products {
+  border: 3px solid #1e0368;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px;                 
+  max-width: 1200px;  
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #81bbdd;
+}
+.map{
+    text-align: center;
+    background-color: #81bbdd;
+    padding: 20px;
+}
+
+.presentacion img{
+    width: 50%;
+}
+.bag img {
+  width: 100%;
+  height: auto;
+}
+
+.price {
+  font-weight: bold;
+  color: green;
+}
+.sale {
+  font-weight: bold;
+  color: rgb(236, 4, 35);
+}
+
+footer {
+  background: #513bcf;
+  text-align: center;
+  padding: 10px;
+  
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 2px solid #651baa;
+}
+
+
