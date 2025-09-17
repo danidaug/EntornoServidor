@@ -59,5 +59,34 @@
             }
         ?>
     </article>
+    <article id="sec3">
+            <?php
+                $num = rand(0,100);
+                echo '<h1>Tabla de multiplicar del '.$num.'</h1>';
+                echo '<table border="3">';    
+                for($i=1;$i<=20;$i++){
+                    echo'<tr>
+                    <td>'.$i.'</td>
+                    <td>'.$i*$num.'</td>
+                    </tr>';
+                }
+                        
+                echo '</table>';
+            ?>
+    </article>
+    <article id="sec4">
+        
+        <?php
+            $col = rand(0,10);
+            $row = rand(0,10);
+            echo '<h1>Tabla de '.$row.' filas y '.$col.' columnas</h1>';
+            echo '<table border="3">';
+            for($i=0;$i <= $row;$i++){
+                echo'<tr>';
+                for($j=)
+            }
+        ?>
+    </article>
+
 </body>
 </html>
