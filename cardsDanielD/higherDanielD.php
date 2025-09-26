@@ -23,16 +23,39 @@
         }
         $p1points=0;
         $p2points=0;
-        foreach($p1deck as $key => $card){
-            if($p1deck[$key]['value']>$p2deck[$key]['value']){
-                $p1points++;
+        //asignacion de puntos
+       foreach($p1deck as $key => $card){
+            $p1value = $p1deck[$key]['value'];
+            $p2value = $p2deck[$key]['value'];
+            
+            //los dos tienen comodines
+            if($p1value == 0 && $p2value == 0){
+                if($p1points > $p2points){
+                    $p1points -= 2;
+                } else {
+                    $p2points -= 2;
+                }
             }
-            if($p1deck[$key]['value']<$p2deck[$key]['value']){
+            // uno tiene comodin y el otro no
+            else if($p1value == 0 && $p2value != 0){
+                $p1points += 2;  
+                $p2points--;     
+            }
+            else if($p2value == 0 && $p1value != 0){
+                $p2points += 2;  
+                $p1points--;     
+            }
+            //tienen el mismo vlaor
+            else if($p1value == $p2value){
+                $p1points++;
                 $p2points++;
             }
-            if($p1deck[$key]['value']==$p2deck[$key]['value']){
-                $p2points;
-                $p1points;
+            //distinto valor
+            else if($p1value > $p2value){
+                $p1points += 2;
+            }
+            else { 
+                $p2points += 2;
             }
         }
         echo '<h1>JUGADOR 1:</h1> <div class="card">';
@@ -50,9 +73,10 @@
         }
         echo '</div>';
         
-        
         echo '<h2>Puntos : '.$p2points.'</h2>';
-        if($p1points==0%%$p2points==0){
+        
+        //quien gana
+        if($p1points>$p2points){
             echo '<h1> Gana Jugador 1</h1>';
         }
         if($p1points<$p2points){
