@@ -27,10 +27,10 @@
         $bankPoints=0;
         //Contar puntos. 
         for($i =0; $i <count($p1deck); $i++){
-            if($p1deck[$i]['value']>10){
+            if($p1deck[$i]['value']>10){ //Si la carta vale mas que 10 la cambiamos a 10
                 $p1deck[$i]['value']=10;
             }
-            if($p1deck[$i]['value']==1&&$p1points<22){
+            if($p1deck[$i]['value']==1 && $p1points<22){
                 $p1deck[$i]['value']=11;
             }
             $p1points+=intval($p1deck[$i]['value']);
